@@ -9503,6 +9503,25 @@ textarea.form-control {
   width: 100%;
   margin-bottom: 25px;
   padding: 0 20px; }
+
+
+.text span {
+  font-size: 2rem;
+  margin-left: 2px;
+  color: #000;
+}
+
+.custom-contact-btn {
+  background-color: #00043c;
+  transition: background-color 0.3s ease;
+}
+
+.custom-contact-btn:hover {
+  background-color: #fdbe34;
+  color: #000; /* Optional: change text to black on hover */
+}
+
+
   @media (min-width: 768px) {
     .dbox {
       margin-bottom: 0;
