@@ -58,39 +58,77 @@
         <div class="col-md-12">
           <div class="wrapper">
             <div class="row no-gutters mb-5">
-              <div class="col-12 col-md-7 mb-4 mb-md-0">
-                <div class="contact-wrap w-100 p-md-5 p-4">
-                  <h3 class="mb-4">Get in Touch</h3>
-                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="name">Full Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Name" required />
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="message">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary" />
-                          <div class="submitting"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
+           <div class="col-12 col-md-7 mb-4 mb-md-0">
+  <div class="contact-wrap w-100 p-md-5 p-4">
+    <h3 class="mb-4">Get in Touch</h3>
+    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+      <div class="row">
+        <!-- Full Name -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="label" for="name">Full Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Name" required />
+          </div>
+        </div>
+        
+        <!-- Email -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="label" for="email">Email Address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required />
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="label" for="phone">Phone Number</label>
+            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" required />
+          </div>
+        </div>
+
+        <!-- Service Dropdown -->
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="label" for="service">Service</label>
+            <select class="form-control" name="service" id="service" required>
+  <option value="" disabled selected>Select a service</option>
+  <option value="Land Development">Land Development</option>
+  <option value="Greenhouse Developments">Greenhouse Developments</option>
+  <option value="Commercial & Industrial Engineering">Commercial & Industrial Engineering</option>
+  <option value="Municipal Engineering">Municipal Engineering</option>
+  <option value="Stormwater Management">Stormwater Management</option>
+  <option value="Sanitary Sewer Analysis">Sanitary Sewer Analysis</option>
+  <option value="Water Demand Analysis">Water Demand Analysis</option>
+  <option value="Functional Servicing Studies">Functional Servicing Studies</option>
+  <option value="Project Management">Project Management</option>
+  <option value="Surveying & Construction Inspection">Surveying & Construction Inspection</option>
+  <option value="Tender Preparation & Evaluation">Tender Preparation & Evaluation</option>
+  <option value="Drainage & Floodplain Modeling">Drainage & Floodplain Modeling</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="col-md-12">
+          <div class="form-group">
+            <label class="label" for="message">Message</label>
+            <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message" required></textarea>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-md-12">
+          <div class="form-group">
+            <input type="submit" value="Send Message" class="btn btn-primary" />
+            <div class="submitting"></div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
 
               <!-- Map Location -->
               <div class="col-12 col-md-5 d-flex align-items-stretch">
