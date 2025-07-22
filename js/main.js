@@ -105,6 +105,31 @@
 	});
 
 
+	  function setActiveNav() {
+    // Get the current page filename
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    // Select all nav links
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    // Loop through each nav link and apply 'active' class
+    navLinks.forEach(link => {
+      // Compare the href without any directory prefix
+      const linkHref = link.getAttribute("href").split("/").pop();
+      if (linkHref === currentPage) {
+        link.classList.add("active");
+        link.parentElement.classList.add("active"); // Add to <li> if needed
+      } else {
+        link.classList.remove("active");
+        link.parentElement.classList.remove("active");
+      }
+    });
+  }
+
+  // Call the function on page load
+  document.addEventListener("DOMContentLoaded", setActiveNav);
+
+
 	fetch("header.html")
   .then((response) => response.text())
   .then((data) => {
