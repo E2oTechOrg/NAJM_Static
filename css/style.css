@@ -8631,6 +8631,44 @@ h1, h2, h3, h4, h5,
     font-size: 20px;
     color: #000000; }
 
+
+#moreText {
+  transition: max-height 0.3s ease;
+}
+#greenhouseMore {
+  transition: max-height 0.3s ease;
+}
+#commercialMore {
+  transition: max-height 0.3s ease;
+}
+#municipalMore {
+  transition: max-height 0.3s ease;
+}
+#stormwaterMore {
+  transition: max-height 0.3s ease;
+}
+#sewerMore {
+  transition: max-height 0.3s ease;
+}
+#waterDemandMore {
+  transition: max-height 0.3s ease;
+}
+#functionalMore {
+  transition: max-height 0.3s ease;
+}
+#projectManagementMore {
+  transition: max-height 0.3s ease;
+}
+
+#tenderMore {
+  transition: max-height 0.3s ease;
+}
+
+#drainageMore {
+  transition: max-height 0.3s ease;
+}
+
+
 .services-2 {
   width: 100%; }
   .services-2 h3 {

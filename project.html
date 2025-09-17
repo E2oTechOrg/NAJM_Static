@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
 <!-- Favicon for Light Theme (default) -->
-<link rel="icon" href="images/najm.png" type="image/png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="images/n.png" type="image/png" media="(prefers-color-scheme: light)">
 
 <!-- Favicon for Dark Theme -->
-<link rel="icon" href="images/najmw.png" type="image/png" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="images/j.png" type="image/png" media="(prefers-color-scheme: dark)">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -103,10 +103,36 @@
  <!-- Services Section -->
 <section id="land-development" class="container my-5">
   <div class="row align-items-center mb-5">
-    <div class="col-md-7">
-      <h2>Land Development</h2>
-      <p>Our comprehensive land development services encompass site planning, zoning analysis, and infrastructure design to support residential, commercial, and industrial projects.</p>
-    </div>
+   <div class="col-md-7">
+  <h2>Land Development</h2>
+  <p id="landDesc">
+    Land development is the critical first step in creating successful real estate ventures. We specialize in transforming undeveloped or underutilized sites into fully prepared, investment-ready properties.
+    <span id="dots">...</span>
+    <span id="moreText" style="display: none;">
+      Through strategic planning, zoning, infrastructure implementation, and regulatory compliance, we unlock the full potential of each site—delivering lasting value for developers and investors seeking long-term growth.
+    </span>
+  </p>
+  <button onclick="toggleReadMore()" id="readMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleReadMore() {
+    const dots = document.getElementById("dots");
+    const moreText = document.getElementById("moreText");
+    const btn = document.getElementById("readMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
       <img src="images/con5.jpg" alt="Land Development" class="img-fluid rounded">
     </div>
@@ -117,10 +143,36 @@
 
 <section id="greenhouse-developments" class="container my-5">
   <div class="row align-items-center mb-5 flex-row-reverse">
-    <div class="col-md-7">
-      <h2>Greenhouse Developments</h2>
-      <p>We design specialized infrastructure to support large-scale greenhouse facilities...</p>
-    </div>
+   <div class="col-md-7">
+  <h2>Greenhouse Developments</h2>
+  <p id="greenhouseDesc">
+    We provide comprehensive civil consulting services to support the successful development of modern greenhouse facilities.
+    <span id="greenhouseDots">...</span>
+    <span id="greenhouseMore" style="display: none;">
+      Our team manages everything from site evaluation and grading to utility planning, drainage design, and regulatory approvals. By working closely with developers, architects, and agricultural specialists, we deliver infrastructure solutions that ensure efficiency, compliance, and sustainability.
+    </span>
+  </p>
+  <button onclick="toggleGreenhouseReadMore()" id="greenhouseReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleGreenhouseReadMore() {
+    const dots = document.getElementById("greenhouseDots");
+    const moreText = document.getElementById("greenhouseMore");
+    const btn = document.getElementById("greenhouseReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
       <img src="images/con7.jpg" alt="Greenhouse Developments" class="img-fluid rounded">
     </div>
@@ -131,11 +183,37 @@
 <section id="commercial-industrial-engineering" class="container my-5">
   <div class="row align-items-center mb-5">
     <div class="col-md-7">
-      <h2>Commercial & Industrial Engineering</h2>
-      <p>We offer tailored civil engineering solutions for commercial and industrial sites...</p>
-    </div>
+  <h2>Commercial & Industrial Engineering</h2>
+  <p id="commercialDesc">
+     We provide comprehensive civil engineering consulting for commercial and industrial projects, collaborating closely with architects and mechanical engineers to deliver integrated site planning....
+    <span id="commercialDots">...</span>
+    <span id="commercialMore" style="display: none;">
+      Our expertise includes grading, servicing, stormwater management, and parking design—ensuring efficient infrastructure that supports operational needs and site functionality.
+    </span>
+  </p>
+  <button onclick="toggleCommercialReadMore()" id="commercialReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleCommercialReadMore() {
+    const dots = document.getElementById("commercialDots");
+    const moreText = document.getElementById("commercialMore");
+    const btn = document.getElementById("commercialReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/commercial.jpg" alt="Commercial & Industrial Engineering" class="img-fluid rounded">
+      <img src="images/parking.jpg" alt="Commercial & Industrial Engineering" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -143,10 +221,38 @@
 
 <section id="municipal-engineering" class="container my-5">
   <div class="row align-items-center mb-5 flex-row-reverse">
-    <div class="col-md-7">
-      <h2>Municipal Engineering</h2>
-      <p>We deliver detailed engineering designs for roads, watermains, and sewers...</p>
-    </div>
+   <div class="col-md-7">
+  <h2>Municipal Engineering</h2>
+  <p id="municipalDesc">
+    As civil consulting engineers, we specialize in municipal engineering—delivering essential infrastructure solutions that support thriving communities...
+    <span id="municipalDots">...</span>
+    <span id="municipalMore" style="display: none;">
+      Our expertise encompasses the planning, design, and management of public works projects including roads, stormwater systems, water distribution networks, wastewater treatment, and public utilities.<br><br>
+      
+      We work closely with municipalities, developers, and stakeholders to ensure that infrastructure is safe, sustainable, and compliant with regulatory standards. From initial feasibility studies through to construction oversight, our goal is to create resilient, cost-effective infrastructure that meets the needs of growing urban and rural populations.
+    </span>
+  </p>
+  <button onclick="toggleMunicipalReadMore()" id="municipalReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleMunicipalReadMore() {
+    const dots = document.getElementById("municipalDots");
+    const moreText = document.getElementById("municipalMore");
+    const btn = document.getElementById("municipalReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
       <img src="images/munis.jpg" alt="Municipal Engineering" class="img-fluid rounded">
     </div>
@@ -156,10 +262,36 @@
 
 <section id="stormwater-management" class="container my-5">
   <div class="row align-items-center mb-5">
-    <div class="col-md-7">
-      <h2>Stormwater Management</h2>
-      <p>Our stormwater systems mitigate flooding and improve water quality...</p>
-    </div>
+   <div class="col-md-7">
+  <h2>Stormwater Management</h2>
+  <p id="stormwaterDesc">
+    Our civil engineering team provides expert stormwater management solutions for residential, commercial, industrial, and municipal projects. We perform detailed site assessments to design effective drainage systems,...
+    <span id="stormwaterDots">...</span>
+    <span id="stormwaterMore" style="display: none;">
+      Our civil engineering team provides expert stormwater management solutions for residential, commercial, industrial, and municipal projects. We perform detailed site assessments to design effective drainage systems, such as retention and detention ponds, infiltration basins, and storm sewer networks. By applying sustainable practices, we control runoff, reduce flood risk, enhance water quality, and help maintain natural hydrology. Each stormwater system is customized to the specific site and community needs, ensuring resilience and environmental responsibility.
+    </span>
+  </p>
+  <button onclick="toggleStormwaterReadMore()" id="stormwaterReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleStormwaterReadMore() {
+    const dots = document.getElementById("stormwaterDots");
+    const moreText = document.getElementById("stormwaterMore");
+    const btn = document.getElementById("stormwaterReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
       <img src="images/manhole.jpg" alt="Stormwater Management" class="img-fluid rounded">
     </div>
@@ -169,12 +301,38 @@
 
 <section id="sanitary-sewer-analysis" class="container my-5">
   <div class="row align-items-center mb-5 flex-row-reverse">
-    <div class="col-md-7">
-      <h2>Sanitary Sewer Analysis</h2>
-      <p>We perform capacity analysis and modeling of sanitary sewer systems...</p>
-    </div>
+<div class="col-md-7">
+  <h2>Sanitary Sewer Analysis</h2>
+  <p id="sewerDesc">
+     Our team conducts detailed hydraulic and hydrologic evaluations of sanitary sewer networks to assess system capacity and performance under varying flow conditions....
+    <span id="sewerDots">...</span>
+    <span id="sewerMore" style="display: none;">
+      Utilizing advanced modeling techniques, we simulate wastewater flow dynamics, identify surcharge points, and detect potential capacity constraints. This analysis informs the optimization of system design, rehabilitation, and expansion strategies to ensure efficient and reliable conveyance of sanitary flows while mitigating the risk of system failures.
+    </span>
+  </p>
+  <button onclick="toggleSewerReadMore()" id="sewerReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleSewerReadMore() {
+    const dots = document.getElementById("sewerDots");
+    const moreText = document.getElementById("sewerMore");
+    const btn = document.getElementById("sewerReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/sanitary.jpg" alt="Sanitary Sewer Analysis" class="img-fluid rounded">
+      <img src="images/sewer.jpg" alt="Sanitary Sewer Analysis" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -183,11 +341,37 @@
 <section id="water-demand-analysis" class="container my-5">
   <div class="row align-items-center mb-5">
     <div class="col-md-7">
-      <h2>Water Demand Analysis</h2>
-      <p>Our engineers assess water supply requirements using advanced modeling...</p>
-    </div>
+  <h2>Water Demand Analysis</h2>
+  <p id="waterDemandDesc">
+     We perform detailed water demand analyses to evaluate hydraulic capacity and ensure reliable water distribution systems...
+    <span id="waterDemandDots">...</span>
+    <span id="waterDemandMore" style="display: none;">
+      By assessing peak and average demand flows, pressure requirements, and future growth projections, our engineers optimize pipeline sizing and layout. This analysis supports the design and upgrade of water infrastructure, ensuring efficient service delivery and system resilience under varying operational conditions.
+    </span>
+  </p>
+  <button onclick="toggleWaterDemandReadMore()" id="waterDemandReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleWaterDemandReadMore() {
+    const dots = document.getElementById("waterDemandDots");
+    const moreText = document.getElementById("waterDemandMore");
+    const btn = document.getElementById("waterDemandReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/wateranalysis.jpg" alt="Water Demand Analysis" class="img-fluid rounded">
+      <img src="images/pipi.jpg" alt="Water Demand Analysis" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -195,12 +379,38 @@
 
 <section id="functional-servicing-studies" class="container my-5">
   <div class="row align-items-center mb-5 flex-row-reverse">
-    <div class="col-md-7">
-      <h2>Functional Servicing Studies</h2>
-      <p>We prepare Functional Servicing Reports (FSRs) that evaluate servicing options...</p>
-    </div>
+ <div class="col-md-7">
+  <h2>Functional Servicing Studies</h2>
+  <p id="functionalDesc">
+     We prepare detailed functional servicing studies and reports to evaluate the feasibility and design of site servicing for proposed developments...
+    <span id="functionalDots">...</span>
+    <span id="functionalMore" style="display: none;">
+     These studies assess key infrastructure components such as water supply, sanitary and stormwater systems, grading, and utility coordination. Our reports provide critical technical insights and recommendations that guide planning approvals and inform detailed engineering design, ensuring projects are efficiently serviced and aligned with municipal requirements.
+    </span>
+  </p>
+  <button onclick="toggleFunctionalReadMore()" id="functionalReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleFunctionalReadMore() {
+    const dots = document.getElementById("functionalDots");
+    const moreText = document.getElementById("functionalMore");
+    const btn = document.getElementById("functionalReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/funstudy.jpg" alt="Functional Servicing Studies" class="img-fluid rounded">
+      <img src="images/survay.jpg" alt="Functional Servicing Studies" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -208,12 +418,38 @@
 
 <section id="project-management" class="container my-5">
   <div class="row align-items-center mb-5">
-    <div class="col-md-7">
-      <h2>Project Management</h2>
-      <p>From concept to completion, our project managers coordinate engineering design...</p>
-    </div>
+ <div class="col-md-7">
+  <h2>Project Management</h2>
+  <p id="projectManagementDesc">
+     We provide project management services specialized in civil land development, overseeing all phases from initial planning through construction completion...
+    <span id="projectManagementDots">...</span>
+    <span id="projectManagementMore" style="display: none;">
+      Our team coordinates multidisciplinary teams, manages schedules and budgets, and ensures seamless communication among stakeholders. By applying best practices and proactive problem-solving, we deliver projects on time and within budget while maintaining quality and meeting client objectives.
+    </span>
+  </p>
+  <button onclick="toggleProjectManagementReadMore()" id="projectManagementReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleProjectManagementReadMore() {
+    const dots = document.getElementById("projectManagementDots");
+    const moreText = document.getElementById("projectManagementMore");
+    const btn = document.getElementById("projectManagementReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/project.jpg" alt="Project Management" class="img-fluid rounded">
+      <img src="images/proect.jpg" alt="Project Management" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -226,7 +462,7 @@
       <p>Our team provides topographic and legal surveying, construction layout...</p>
     </div>
     <div class="col-md-5">
-      <img src="images/survay.jpg" alt="Surveying & Construction Inspection" class="img-fluid rounded">
+      <img src="images/funstudy.jpg" alt="Surveying & Construction Inspection" class="img-fluid rounded">
     </div>
   </div>
 </section>
@@ -235,9 +471,35 @@
 <section id="tender-preparation-evaluation" class="container my-5">
   <div class="row align-items-center mb-5">
     <div class="col-md-7">
-      <h2>Tender Preparation & Evaluation</h2>
-      <p>We prepare comprehensive tender packages including drawings and specs...</p>
-    </div>
+  <h2>Tender Preparation & Evaluation</h2>
+  <p id="tenderDesc">
+    We provide expert support in preparing tender documents that clearly define project specifications, scope, and performance criteria...
+    <span id="tenderDots">...</span>
+    <span id="tenderMore" style="display: none;">
+       Our team manages the tendering process end-to-end, including issuing tenders, responding to bidder inquiries, and coordinating site visits. We conduct detailed evaluations of all submissions, assessing technical compliance, cost effectiveness, and contractor qualifications. Our thorough analysis enables clients to make well-informed decisions, selecting contractors who meet project requirements and deliver value on time and within budget.
+    </span>
+  </p>
+  <button onclick="toggleTenderReadMore()" id="tenderReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleTenderReadMore() {
+    const dots = document.getElementById("tenderDots");
+    const moreText = document.getElementById("tenderMore");
+    const btn = document.getElementById("tenderReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
       <img src="images/tender.jpg" alt="Tender Preparation & Evaluation" class="img-fluid rounded">
     </div>
@@ -248,11 +510,37 @@
 <section id="drainage-floodplain-modeling" class="container my-5">
   <div class="row align-items-center mb-5 flex-row-reverse">
     <div class="col-md-7">
-      <h2>Drainage & Floodplain Modeling</h2>
-      <p>We conduct detailed drainage and floodplain modeling using advanced software...</p>
-    </div>
+  <h2>Drainage & Floodplain Modeling</h2>
+  <p id="drainageDesc">
+    Our civil engineering team provides in-depth drainage and floodplain modelling services to accurately evaluate surface water runoff, drainage patterns, and flood risks across various site conditions...
+    <span id="drainageDots">...</span>
+    <span id="drainageMore" style="display: none;">
+       Utilizing advanced hydrologic and hydraulic modeling tools, we analyze stormwater flow, assess floodplain boundaries, and predict the impact of development on natural watercourses. This detailed analysis supports the design of effective drainage systems, flood mitigation measures, and stormwater management plans. By integrating environmental considerations and best engineering practices, we help clients minimize flood hazards, protect infrastructure, and ensure sustainable site development.
+    </span>
+  </p>
+  <button onclick="toggleDrainageReadMore()" id="drainageReadMoreBtn" class="btn btn-primary">Read More</button>
+</div>
+
+<script>
+  function toggleDrainageReadMore() {
+    const dots = document.getElementById("drainageDots");
+    const moreText = document.getElementById("drainageMore");
+    const btn = document.getElementById("drainageReadMoreBtn");
+
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      moreText.style.display = "none";
+      btn.innerText = "Read More";
+    } else {
+      dots.style.display = "none";
+      moreText.style.display = "inline";
+      btn.innerText = "Read Less";
+    }
+  }
+</script>
+
     <div class="col-md-5">
-      <img src="images/draiage.jpg" alt="Drainage & Floodplain Modeling" class="img-fluid rounded">
+      <img src="images/small-river-trees.jpg" alt="Drainage & Floodplain Modeling" class="img-fluid rounded">
     </div>
   </div>
 </section>
